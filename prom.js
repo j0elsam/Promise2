@@ -1,5 +1,5 @@
 //Use fetch to get data from https://jsonplaceholder.typicode.com/ 
-fetch('https://jsonplaceholder.typicode.com/users')
+const response = fetch('https://jsonplaceholder.typicode.com/users')
   .then((res) => {
     return res.json();
   })
