@@ -1,12 +1,11 @@
 //Use fetch to get data from https://jsonplaceholder.typicode.com/ 
-const response = fetch('https://jsonplaceholder.typicode.com/users')
-  .then((res) => {
+fetch('https://jsonplaceholder.typicode.com/users').then((res) => {
+  
     return res.json();
-  })
-  .then((response) => {
+  
+  }).then((response) => {
     console.log(response);
-  })
-  .catch((err) => {
+  }).catch((err) => {
     console.log('Error occurred', err);
   });
   
